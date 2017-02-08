@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+header {background: white;color:black;}
+footer {background: #aaa;color:white;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000080;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #F5FFFA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: black}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <!-- <h1>Some<i>THING</i> with Every<i>THING</i></h1> -->
+  <h1><span style="color:blue;"><strong>S</strong></span><span style="color:red;"><strong>o</strong></span><span style="color:green;"><strong>m</strong></span><span style="color:royalblue;"><strong>e</strong></span><span style="color:tomato;"><strong>T</strong></span><span style="color:yellowgreen;"><strong>H</strong></span><span style="color:blue;"><strong>I</strong></span><span style="color:red;"><strong>N</strong></span><span style="color:blue;"><strong>G</strong></span><span style="color:red;"><strong>   <strong>-</strong>  w</strong></span><span style="color:green;"><strong>i</strong></span><span style="color:red;"><strong>t</strong></span><span style="color:blue;"><strong>h</strong></span><span style="color:red;"><strong></strong></span><strong> - </strong> <span style="color:green;"><strong>E</strong></span><span style="color:red;"><strong>v</strong></span><span style="color:blue;"><strong>e</strong></span><span style="color:red;"><strong>r</strong></span><span style="color:blue;"><strong>y</strong></span><span style="color:red;"><strong>T</strong></span><span style="color:blue;"><strong>H</strong></span><span style="color:red;"><strong>I</strong></span><span style="color:blue;"><strong>N</strong></span><span style="color:green;"><strong>G</strong></span></h1>
+</header>
+
+<ul>
+  <li><a href="index.html"><strong>Home</strong></a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn"><strong>Learnings</strong></a>
+    <div class="dropdown-content">
+      <a href="page1.php">Study Mode</a>
+      <a href="page2,php">Examples</a>
+      <a href="page3.php">Find it here</a>
+   </div>
+   <li><a href="Entertainment.php"><strong>Entertainment</strong></a></li>
+    <li style="float:right"><a href="about.html"><strong>About</strong></a></li>
+  </li>
+</ul>
+
+<h3>Welcome to My Page</h3>
+
+
+
+<!-- <iframe src="page1.php"  style="position:absolute"; style="top: 80px;" style="left: 40px;"
+    style="bottom: 25px;"
+    style="min-width: 200px;"
+    style="width: 40%;"
+    style="background: black;"> -->
+    <iframe src="page1.php"></iframe>
+
+<p><a href="page1.php" target="iframe_a"><strong>Study Mode</strong></a></p>
+
+<iframe src="page2.php" style="padding: 12px 16px;" style="position: fixed;" style="top: 80px;" style="left: 40px;"
+    style="bottom: 25px;"
+    style="min-width: 200px;"
+    style="width: 40%;"
+    style="background: black;"></iframe>
+
+<p><a href="page2.php" target="iframe_a"><strong>Examples</strong></a></p>
+
+<!-- <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="page1.php">Education</a></li>
+  <li><a href="Entertainment">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul> -->
+<footer>Copyright &#169 sagarvhande@gmail.com</footer>
+</body>
+</html>
+
